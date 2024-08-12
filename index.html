@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Cover Letter Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cover Letter Generator</h1>
+        <form id="coverLetterForm">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required>
+            
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+            
+            <label for="applicantName">Your Name:</label>
+            <input type="text" id="applicantName" name="applicantName" required>
+            
+            <label for="experience">Experience (in years):</label>
+            <input type="number" id="experience" name="experience" required>
+            
+            <button type="submit">Generate Cover Letter</button>
+        </form>
+        
+        <h2>Your Generated Cover Letter:</h2>
+        <textarea id="coverLetterOutput" rows="10" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
